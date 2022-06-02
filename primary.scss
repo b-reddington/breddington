@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+$orange: #FF8A48;
+$field-c: #374A70;
+$offwhite: #DEE0E4;
+$inactive: #73809B;
+
+* {
+    font-family: 'Baloo 2', cursive;
+    color: $offwhite;
+}
+
+header {
+    position: absolute;
+    top: 10vh;
+    left: 43.5vw;
+}
+
+#subheader {
+    position: absolute;
+    top: 7.75vh;
+    margin-left: 5vw;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+body {
+    background-color: #222F48;
+}
+
+.object-container {
+    position: absolute;
+    left: 45vw;
+    top: 25vh;
+}
+
+#highlight {
+    color: $orange;
+    font-weight: 700;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    font-size: 90px;
+    font-weight: 800;
+    text-shadow: 4px 4px 1px $orange;
+}
+
+h1 #highlight {
+    margin: 0;
+    padding: 0;
+    color: $orange;
+    text-shadow: 3px 3px 1px #FFFFFF;
+}
+
+sub {
+    font-size: 12px;
+}
+
+.price h2 {
+    margin: 0;
+    color: $offwhite;
+}
+
+.field {
+    width: 280px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: $field-c;
+    color: $inactive;
+}
+
+.price input[type="radio"] {
+    padding-left: 22px;
+    font-weight: 800;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.price input[type="radio"]:before {
+    font-size: 30px;
+    cursor: pointer;
+    content: "$";
+    color: $inactive;
+}
+
+.price input[type="radio"]:checked {
+    color: $offwhite;
+}
+
+.meal h2 {
+    padding-top: 25px;
+    margin: 0;
+}
+
+.meal center {
+    padding-top: 12px;
+}
+
+
+input[type="checkbox"] {
+    margin-left:  65px;
+    margin-top: 15px;
+}
+
+label[for="delivery"] {
+    font-weight: 600;
+    padding-left: 8px;
+}
+
+input[type="button"] {
+    content: "Generate!";
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    background-color: $orange;
+    border-radius: 100px;
+    border: none;
+    width: 280px;
+    height: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    transition: 350ms;
+    background-color: $offwhite;
+    color: $orange;
+}
